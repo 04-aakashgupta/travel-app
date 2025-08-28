@@ -37,3 +37,6 @@ cd travel-app
 
 # Install dependencies
 npm install
+
+# Run Application
+npm run dev
