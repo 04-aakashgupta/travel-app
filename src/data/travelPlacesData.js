@@ -25,7 +25,7 @@ const travelPlacesData = [
     temperature: "28° Sunny",
     description:
       "Experience the charm of ancient Rome with our guided tours. Refund policy included for your comfort.",
-    image: "/src/assets/images/home/travel-place/city_rome.jpg",
+    image:city_rome,
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const travelPlacesData = [
     temperature: "22° Cloudy",
     description:
       "Romantic evenings and beautiful sights. Best rooms and refund policy available.",
-    image: "/src/assets/images/home/travel-place/paris.jpg",
+    image: paris,
   },
 ];
 
