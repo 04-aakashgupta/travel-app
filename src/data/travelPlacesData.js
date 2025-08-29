@@ -1,3 +1,7 @@
+import londan_eye from "../assets/images/home/travel-place/londan_eye.jpg"
+import city_rome from "../assets/images/home/travel-place/city_rome.jpg"
+import paris from "../assets/images/home/travel-place/paris.jpg"
+
 const travelPlacesData = [
   {
     id: 1,
@@ -9,7 +13,7 @@ const travelPlacesData = [
     temperature: "25° Sunny",
     description:
       "We have best rooms in town our services are always on our customers for get our great impression. We have also refund payment policy if you book our rooms and if you don’t like you can get back your payment.",
-    image: "/src/assets/images/home/travel-place/londan_eye.jpg",
+    image: londan_eye,
   },
   {
     id: 2,
