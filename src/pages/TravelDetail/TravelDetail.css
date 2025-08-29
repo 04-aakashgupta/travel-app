@@ -1,0 +1,207 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  /* default = vertical stack */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* --- DETAIL CARD --- */
+.detail-container {
+  background: #333;
+  padding: clamp(12px, 2vw, 20px);
+  border-radius: 20px;
+  max-width: 90%;
+  width: clamp(320px, 80vw, 400px);
+  margin: auto;
+}
+
+.detail-banner {
+  text-align: center;
+}
+
+/* --- DETAIL CARD --- */
+.detail-container {
+  background: #333;
+  padding: clamp(12px, 2vw, 20px);
+  border-radius: 20px;
+  max-width: 90%;
+  width: clamp(320px, 80vw, 400px);
+  margin: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for detail card */
+.detail-container:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* --- OVERVIEW CARDS --- */
+.overview-card {
+  background: #444;
+  padding: clamp(8px, 2vw, 14px);
+  border-radius: 10px;
+  text-align: center;
+  font-size: clamp(12px, 2vw, 16px);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+/* Hover effect for overview cards */
+.overview-card:hover {
+  transform: scale(1.05);
+  background: #555;
+}
+
+/* --- BOOK BUTTON --- */
+.book-btn {
+  background: #7ed957;
+  color: #000;
+  font-weight: bold;
+  padding: clamp(10px, 2.5vw, 16px);
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-size: clamp(14px, 2.5vw, 18px);
+  transition: 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #6ac349;
+  transform: scale(1.04);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+
+.detail-image {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.weather-card {
+  background: #7ed957;
+  color: #000;
+  padding: clamp(8px, 2vw, 12px);
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: clamp(10px, 2vw, 15px) 0;
+  font-weight: bold;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+.weather-card .temperature {
+  font-size: clamp(16px, 2.5vw, 22px);
+}
+
+.weather-icon {
+  width: clamp(20px, 5vw, 35px);
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(8px, 2vw, 12px);
+}
+
+.price {
+  background: #fff;
+  color: #000;
+  padding: clamp(4px, 1vw, 8px) clamp(8px, 2vw, 14px);
+  border-radius: 8px;
+  font-size: clamp(12px, 2vw, 16px);
+}
+
+.overview {
+  margin-top: clamp(15px, 3vw, 25px);
+}
+
+.overview h3 {
+  margin-bottom: clamp(8px, 1.5vw, 12px);
+  font-size: clamp(16px, 2.5vw, 22px);
+}
+
+.overview-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: clamp(10px, 2vw, 18px);
+}
+
+.overview-card {
+  background: #444;
+  padding: clamp(8px, 2vw, 14px);
+  border-radius: 10px;
+  text-align: center;
+  font-size: clamp(12px, 2vw, 16px);
+}
+
+.overview-icon {
+  font-size: clamp(18px, 4vw, 26px);
+  margin-bottom: 5px;
+}
+
+.description {
+  margin: clamp(12px, 2vw, 18px) 0;
+  line-height: 1.5;
+  font-size: clamp(12px, 2vw, 16px);
+}
+
+.facilities {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: clamp(10px, 2vw, 20px);
+  margin: clamp(15px, 3vw, 25px) 0;
+  font-size: clamp(18px, 4vw, 26px);
+}
+
+.book-btn {
+  background: #7ed957;
+  color: #000;
+  font-weight: bold;
+  padding: clamp(10px, 2.5vw, 16px);
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  font-size: clamp(14px, 2.5vw, 18px);
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: #6ac349;
+}
+
+/* --- RESPONSIVE LAYOUT SHIFT --- */
+/* --- RESPONSIVE LAYOUT SHIFT --- */
+/* --- RESPONSIVE LAYOUT SHIFT --- */
+@media (min-width: 1200px) {
+  .app-container {
+    flex-direction: row;
+    justify-content: center;   /* center children horizontally */
+    align-items: flex-start;   /* align them from top */
+    gap: 60px;
+    padding: 50px;
+
+    max-width: 1400px;         /* ✅ center container itself */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .detail-container {
+    flex: 1;
+    max-width: 1200px;         /* wide card */
+    width: 100%;
+    margin: 0 auto;            /* ensures centering if fewer cards */
+    padding: 18px 28px;
+  }
+}
