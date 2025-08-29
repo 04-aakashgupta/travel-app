@@ -1,6 +1,6 @@
 # 🌍 Travel App
 
-A modern travel application built with **React + Vite**, created as part of a task from **Unni AI**.  
+A modern travel application built with **React + Vite**.
 This app helps users explore destinations with a smooth onboarding experience and an interactive home page.
 
 ---
