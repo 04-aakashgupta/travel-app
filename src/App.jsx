@@ -1,8 +1,10 @@
 
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Onboarding from './pages/onboarding/onboarding';
 import Home from './pages/Home/Home';
+import Onboarding from './pages/Onboarding/Onboarding';
+
+
 
 
 
