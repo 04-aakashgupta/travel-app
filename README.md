@@ -19,8 +19,7 @@ This app helps users explore destinations with a smooth onboarding experience an
 
 - **React 18** – UI library  
 - **Vite** – Fast development & build tool  
-- **ESLint** – Code linting  
-- *(Optional: Tailwind CSS / React Router / Zustand if you’ve used them — add here)*  
+
 
 ---
 
